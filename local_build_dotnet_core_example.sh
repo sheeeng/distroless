@@ -46,11 +46,11 @@ cd ${GIT_ROOT_DIR}/examples/dotnet_core/
 #     --configuration Release \
 #     --runtime osx-x64
 
-# dotnet restore \
-#     --runtime ubuntu.14.04-x64 \
-#     && dotnet publish \
-#     --configuration Release \
-#     --runtime ubuntu.14.04-x64
+dotnet restore \
+    --runtime linux-x64 \
+    && dotnet publish \
+    --configuration Release \
+    --runtime linux-x64
 
 dotnet restore \
 && dotnet publish \
